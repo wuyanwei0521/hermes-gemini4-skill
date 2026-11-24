@@ -31,13 +31,15 @@ Hermes Agent / Orca / Claude Code / OpenCode
 
 ## 一键安装本 Skill
 
-### 方式 1：Hermes Agent（推荐）
+### 方式 1：Hermes Agent 一键安装（推荐，自动拉取 `SKILL.md` + 全部 `references/`）
 
 ```bash
-hermes skills install wuyanwei0521/hermes-gemini4-skill
+hermes skills install wuyanwei0521/hermes-gemini4-skill/
 ```
 
-或通过 raw URL 安装：
+> 注意末尾的 `/` 不能省略（Hermes 用 `owner/repo/` 表示根目录单 skill 仓库，会一并拉取 `references/` 排障与进阶文档）。
+
+或仅安装单文件 `SKILL.md`（不含 `references/`）：
 
 ```bash
 hermes skills install https://raw.githubusercontent.com/wuyanwei0521/hermes-gemini4-skill/main/SKILL.md
